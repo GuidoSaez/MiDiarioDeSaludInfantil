@@ -70,12 +70,12 @@
                         
                         <p>¿Eres nuevo? Regístrate acá</p>
                         <div class="grid grid-cols-3 grid-gap">
-                            <button id="btnRegistrarse" class="button button-fill">Registrarse</button>
+                            <a href="/registro/" class="button button-fill">Registrarse</a>
                         </div>
                         
                         <p>¿Ya tienes cuenta? Inicia sesión acá</p>
                         <div class="grid grid-cols-3 grid-gap">
-                            <button id="btnIniciarSesion" class="button button-fill">Iniciar Sesión</button>
+                            <a href="/inicioSesion/" class="button button-fill">Iniciar Sesión</a>
                         </div>
                         
                         
@@ -89,8 +89,25 @@
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
 
-
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDT6WgnLG6yR_L3SByaBB74GdXuZLS7tgM",
+            authDomain: "midiariodesaludinfantil.firebaseapp.com",
+            projectId: "midiariodesaludinfantil",
+            storageBucket: "midiariodesaludinfantil.appspot.com",
+            messagingSenderId: "1061683199246",
+            appId: "1:1061683199246:web:f69d5910d8707da27f2b5f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    
+<!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+-->    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
     <!--<script type="text/javascript" src="lib/framework7/framework7.js"></script>-->

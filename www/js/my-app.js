@@ -38,12 +38,11 @@ $$(document).on('page:init', function (e) {
 
 // Option 2. Using live 'page:init' event handlers for each page
 $$(document).on('page:init', '.page[data-name="index"]', function (e) {
-    $$("#btnRegistrarse").on('click', fnIrARegistro);
-    $$("#btnIniciarSesion").on('click', fnIrAIniciarSesion);
+    
 });
 
 $$(document).on('page:init', '.page[data-name="registro"]', function (e) {
-    
+    $$("#btnRegistrar").on('click', fnValidarRegistro);
 });
 
 $$(document).on('page:init', '.page[data-name="inicioSesion"]', function (e) {
@@ -59,17 +58,49 @@ $$(document).on('page:init', '.page[data-name="menuPrincipal"]', function (e) {
 
 // ** <------------------------------- MIS FUNCIONES -------------------------------------------------->
 
-function fnIrARegistro () {
-  mainView.router.navigate("/registro/");
-}
+function fnValidarRegistro () {
+  email = $$("#registroEmail").val();
+  password = $$("#registroPassword").val();
 
-function fnIrAIniciarSesion (){
-  mainView.router.navigate("/inicioSesion/");
+  if (email != "" && password != "") {
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then((userCredential) => {          // Signed in
+        var user = userCredential.user;
+        console.log("Bienvenid@!!! " + email); // ...
+        mainView.router.navigate('/menuPrincipal/');
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.error(errorCode);
+        console.error(errorMessage);
+        if (errorCode == "auth/email-already-in-use") {
+          console.error("el mail ya esta usado");
+        }
+      });
+  }
 }
 
 function fnValidarInicioSesion () {
-    mainView.router.navigate("/menuPrincipal/");
+  email = $$("#loginEmail").val();
+  password = $$("#loginPassword").val();
+  if(email != "" && password != "") {
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then((userCredential) => {
+        var user = userCredential.user;
+        console.log("Bienvenid@!!! " + email);
+        mainView.router.navigate('/menuPrincipal/');
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.error(errorCode);
+        console.error(errorMessage);
+      });
+  }
 }
 
 
 // ** <--------------------------------------- VARIABLES GLOBALES -------------------------------------------->
+
+let email, password;
