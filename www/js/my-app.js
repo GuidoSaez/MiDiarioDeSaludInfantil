@@ -65,8 +65,7 @@ function fnValidarRegistro () {
   if (email != "" && password != "") {
     firebase.auth().createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {          // Signed in
-        var user = userCredential.user;
-        console.log("Bienvenid@!!! " + email); // ...
+        var user = userCredential.user; 
         mainView.router.navigate('/menuPrincipal/');
       })
       .catch((error) => {
@@ -76,10 +75,23 @@ function fnValidarRegistro () {
         console.error(errorMessage);
         if (errorCode == "auth/email-already-in-use") {
           console.error("el mail ya esta usado");
-        }
+        };
       });
-  }
-}
+  };
+
+  let datos = { email: email, password: password, };    
+  let iD = email;
+
+  coleccionUsuarios.doc(iD).set(datos);
+  .then( function(docRef) {
+
+  });
+
+  .catch(function(error){
+    
+  })
+
+};
 
 function fnValidarInicioSesion () {
   email = $$("#loginEmail").val();
@@ -104,3 +116,13 @@ function fnValidarInicioSesion () {
 // ** <--------------------------------------- VARIABLES GLOBALES -------------------------------------------->
 
 let email, password;
+let db = firebase.firestore();
+let coleccionUsuarios = db.collection('usuarios');
+
+
+
+// ** <---------------------------------------- SEMBRADO DE DATOS -------------------------------------------->
+
+function sembrarDatos() {
+
+}
