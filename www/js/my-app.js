@@ -18,7 +18,8 @@ var app = new Framework7({
           { path: '/index/',           url: 'index.html' },
           { path: '/registro/',        url: 'registro.html' },
           { path: '/inicioSesion/',    url: 'inicioSesion.html' },
-          { path: '/menuPrincipal/',    url: 'menuPrincipal.html' }, 
+          { path: '/menuPrincipal/',    url: 'menuPrincipal.html' },
+          { path: '/registroNiño/',    url: 'registroNiño.html' }, 
     ]
     // ... other parameters
   });
@@ -53,6 +54,10 @@ $$(document).on('page:init', '.page[data-name="menuPrincipal"]', function (e) {
     
 });
 
+$$(document).on('page:init', '.page[data-name="registroNiño"]', function (e) {
+    $$("#btnguardarRegistroNiño").on('click', fnGuardarRegistroNiño());
+});
+
 
 
 
@@ -79,18 +84,18 @@ function fnValidarRegistro () {
       });
   };
 
-  let datos = { email: email, password: password, };    
-  let iD = email;
+  // let datos = { email: email, password: password, };    
+  // let iD = email;
 
-  coleccionUsuarios.doc(iD).set(datos);
-  .then( function(docRef) {
+  // coleccionUsuarios.doc(iD).set(datos)
+  // .then( function(docRef) {
 
-  });
+  // })
 
-  .catch(function(error){
+  // .catch(function(error){
     
-  })
-
+  // })
+  
 };
 
 function fnValidarInicioSesion () {
@@ -112,12 +117,35 @@ function fnValidarInicioSesion () {
   }
 }
 
+function fnGuardarRegistroNiño() {
+  nombreNiño = $$("#registroNiñoNombre").val();
+  apellidoNiño = $$("#registroNiñoApellido").val();
+  dniNiño = $$("#registroNiñoDni").val();
+  fechaNacimientoNiño = $$("#registroNiñoFechaNacimiento").val();
+  paisNiño = $$("#registroNiñoPais").val();
+  provinciaNiño = $$("#registroNiñoProvincia").val();
+  horaNacimientoNiño = $$("#registroNiñoHoraNacimiento").val();
+
+  let datos = { nombre: nombreNiño, apellido: apellidoNiño, dni: dniNiño, fechaNacimiento: fechaNacimientoNiño, pais: paisNiño, provincia: provinciaNiño, horaNacimiento: horaNacimientoNiño };
+  let iD = email;
+
+  coleccionDatosNiños.doc(iD).set(datos)
+  .then ( function(docRef) {
+    mainView.router.navigate('/menuPrincipal/')
+  })
+  .catch (function(error) {
+    console.log("error" + error)
+  })
+
+} 
+
 
 // ** <--------------------------------------- VARIABLES GLOBALES -------------------------------------------->
 
-let email, password;
+let email, password, nombreNiño, dniNiño, fechaNacimientoNiño, paisNiño, provinciaNiño, horaNacimientoNiño;
 let db = firebase.firestore();
 let coleccionUsuarios = db.collection('usuarios');
+let coleccionDatosNiños = db.collection('datosNiños');
 
 
 
