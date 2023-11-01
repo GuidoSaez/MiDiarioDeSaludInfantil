@@ -14,75 +14,171 @@
     <div class="page-content">
         <div class="block-title">Welcome to Framework7</div>
         <div class="block block-strong">
-            <div class="list list-strong-ios list-dividers-ios inset-ios">
-                <ul>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">Nombre</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoNombre" type="text">
-                                <span class="input-clear-button"></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">Apellido</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoApellido" type="text">
-                                <span class="input-clear-button"></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">DNI</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoDni" type="number">
-                                <span class="input-clear-button"></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">Fecha de nacimiento</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoFechaNacimiento" type="date">
-                             </div>
-                        </div>
-                    </li>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">Pais</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoPais" type="text">
-                                <span class="input-clear-button"></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">Provincia</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoProvincia" type="text">
-                                <span class="input-clear-button"></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item-content item-input">
-                        <div class="item-inner">
-                            <div class="item-title item-label">Hora de nacimiento</div>
-                            <div class="item-input-wrap">
-                                <input id="registroNiñoHoraNacimiento" type="time">
-                                <span class="input-clear-button"></span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="grid grid-cols-3 grid-gap">
-                <button id="btnguardarRegistroNiño" class="button button-fill">Guardar</button>
-            </div>
+            <swiper-container pagination class="demo-swiper-multiple">
+                <swiper-slide>
+                    <div class="list list-strong-ios list-dividers-ios inset-ios">
+                        <ul>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Nombre</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoNombre" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Apellido</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoApellido" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">DNI</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoDni" type="number">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Fecha de nacimiento</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoFechaNacimiento" type="date">
+                                     </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Pais</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoPais" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Provincia</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoProvincia" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Hora de nacimiento</div>
+                                    <div class="item-input-wrap">
+                                        <input id="registroNiñoHoraNacimiento" type="time">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <h1>Tipo de parto</h1>
+
+                    <label class="checkbox">
+                        <input id="tipoPartoCesarea" type="checkbox" value="cesarea" />Cesarea<i class="icon-checkbox"></i>
+                    </label>
+                    <label class="checkbox">
+                        <input id="tipoPartoNormal" type="checkbox" value="normal"/>Normal<i class="icon-checkbox"></i>
+                    </label>
+                    <label class="checkbox">
+                        <input id="tipoPartoForceps" type="checkbox" value="forceps"/>Forceps u otro<i class="icon-checkbox"></i>
+                    </label>
+                    
+                    <div class="list list-strong-ios list-dividers-ios inset-ios">
+                        <ul>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Edad gestacional</div>
+                                    <div class="item-input-wrap">
+                                        <input id="edadGestacional" type="number">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Apgar</div>
+                                    <div class="item-input-wrap">
+                                        <input id="apgar" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Peso</div>
+                                    <div class="item-input-wrap">
+                                        <input id="peso" type="number">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Talla</div>
+                                    <div class="item-input-wrap">
+                                        <input id="talla" type="number">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Perimetro Cefalico</div>
+                                    <div class="item-input-wrap">
+                                        <input id="perimetroCefalico" type="number">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Grupo Sanguineo</div>
+                                    <div class="item-input-wrap">
+                                        <input id="grupoSanguineo" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Factor RH</div>
+                                    <div class="item-input-wrap">
+                                        <input id="factorRH" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Requirio reanimacion</h3>
+                    <label class="checkbox">
+                        <input id="reanimacion" type="checkbox" value="si"/>Si<i class="icon-checkbox"></i>
+                    </label>
+                    <label class="checkbox">
+                        <input id="reanimacion" type="checkbox" value="no"/>No<i class="icon-checkbox"></i>
+                    </label>
+
+                    <div class="grid grid-cols-3 grid-gap">
+                        <button id="btnguardarRegistroNiño" class="button button-fill">Guardar</button>
+                    </div>
+                </swiper-slide>
+                
+            </swiper-container>
+            
+            
         </div>
     </div>
 </div>
