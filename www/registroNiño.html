@@ -22,7 +22,7 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">Nombre</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoNombre" type="text">
+                                        <input id="nombre" type="text">
                                         <span class="input-clear-button"></span>
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">Apellido</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoApellido" type="text">
+                                        <input id="apellido" type="text">
                                         <span class="input-clear-button"></span>
                                     </div>
                                 </div>
@@ -40,7 +40,7 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">DNI</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoDni" type="number">
+                                        <input id="dni" type="number">
                                         <span class="input-clear-button"></span>
                                     </div>
                                 </div>
@@ -49,7 +49,7 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">Fecha de nacimiento</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoFechaNacimiento" type="date">
+                                        <input id="fechaNacimiento" type="date">
                                      </div>
                                 </div>
                             </li>
@@ -57,7 +57,7 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">Pais</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoPais" type="text">
+                                        <input id="pais" type="text">
                                         <span class="input-clear-button"></span>
                                     </div>
                                 </div>
@@ -66,7 +66,16 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">Provincia</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoProvincia" type="text">
+                                        <input id="provincia" type="text">
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-title item-label">Ciudad</div>
+                                    <div class="item-input-wrap">
+                                        <input id="ciudad" type="text">
                                         <span class="input-clear-button"></span>
                                     </div>
                                 </div>
@@ -75,7 +84,7 @@
                                 <div class="item-inner">
                                     <div class="item-title item-label">Hora de nacimiento</div>
                                     <div class="item-input-wrap">
-                                        <input id="registroNiñoHoraNacimiento" type="time">
+                                        <input id="horaNacimiento" type="time">
                                         <span class="input-clear-button"></span>
                                     </div>
                                 </div>
@@ -87,13 +96,13 @@
                     <h1>Tipo de parto</h1>
 
                     <label class="checkbox">
-                        <input id="tipoPartoCesarea" type="checkbox" value="cesarea" />Cesarea<i class="icon-checkbox"></i>
+                        <input id="tipoPartoCesarea" type="checkbox"  />Cesarea<i class="icon-checkbox"></i>
                     </label>
                     <label class="checkbox">
-                        <input id="tipoPartoNormal" type="checkbox" value="normal"/>Normal<i class="icon-checkbox"></i>
+                        <input id="tipoPartoNormal" type="checkbox" />Normal<i class="icon-checkbox"></i>
                     </label>
                     <label class="checkbox">
-                        <input id="tipoPartoForceps" type="checkbox" value="forceps"/>Forceps u otro<i class="icon-checkbox"></i>
+                        <input id="tipoPartoForceps" type="checkbox" />Forceps u otro<i class="icon-checkbox"></i>
                     </label>
                     
                     <div class="list list-strong-ios list-dividers-ios inset-ios">
@@ -165,10 +174,10 @@
                     </div>
                     <h3>Requirio reanimacion</h3>
                     <label class="checkbox">
-                        <input id="reanimacion" type="checkbox" value="si"/>Si<i class="icon-checkbox"></i>
+                        <input id="reanimacionSI" type="checkbox" />Si<i class="icon-checkbox"></i>
                     </label>
                     <label class="checkbox">
-                        <input id="reanimacion" type="checkbox" value="no"/>No<i class="icon-checkbox"></i>
+                        <input id="reanimacionNO" type="checkbox" />No<i class="icon-checkbox"></i>
                     </label>
 
                     <div class="grid grid-cols-3 grid-gap">

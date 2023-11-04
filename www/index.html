@@ -30,8 +30,11 @@
     <link rel="stylesheet" href="css/icons.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/imgIndex.png" type="image/x-icon">
     <link rel="stylesheet" href="css/menuPrincipal.css">
     <link rel="stylesheet" href="css/registroNiño.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/notas_observaciones.css">
 </head>
 
 <body>
@@ -46,7 +49,7 @@
                 <div class="navbar-bg"></div>
                 <div class="navbar-inner">
                     <div class="left"><i class="icon icon-back"></i></div>
-                    <div class="title">Mi diario de salud infantil</div>
+                    <div class="title"></div>
                     <div class="right"><i class="icon icon-forward"></i></div>
                 </div>
             </div>
@@ -55,8 +58,7 @@
             <div class="toolbar toolbar-bottom">
                 <div class="toolbar-inner">
                 <!-- Toolbar links -->
-                <a href="#" class="link">Link 1</a>
-                <a href="#" class="link">Link 2</a>
+                <a href="/menuPrincipal/" class="link">Volver</a>
                 </div>
             </div>
         
@@ -68,24 +70,21 @@
                         
                         <!-- CONTENIDO DEMO -->
                         
+                        <img class="imgBebe" src="img/imgIndex.png" alt="">
+                           
                         <h1>Mi diario de salud infantil</h1>
-                        
+                            
                         <p>¿Eres nuevo? Regístrate acá</p>
                         <div class="grid grid-cols-3 grid-gap">
                             <a href="/registro/" class="button button-fill">Registrarse</a>
                         </div>
-                        
+                                
                         <p>¿Ya tienes cuenta? Inicia sesión acá</p>
-                        <div class="grid grid-cols-3 grid-gap">
+                        <div class="grid grid-cols-3 grid-gap btnIniciarSesion">
                             <a href="/inicioSesion/" class="button button-fill">Iniciar Sesión</a>
                         </div>
-                        
-                        
-                        <!-- FIN DE DEMO -->
-                        
-                        
-                        
-                        
+                                
+                        <!-- FIN DE DEMO -->        
                     </div>
                 </div>
             </div>
@@ -114,6 +113,14 @@
     <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
     <!--<script type="text/javascript" src="lib/framework7/framework7.js"></script>-->
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/variables.js"></script>
+    <script type="text/javascript" src="js/controlDeVacunas.js"></script>
+    <script type="text/javascript" src="js/controlDeSalud.js"></script>
+    <script type="text/javascript" src="js/inicioSesion.js"></script>
+    <script type="text/javascript" src="js/registroNiño.js"></script>
+    <script type="text/javascript" src="js/registro.js"></script>
+    <script type="text/javascript" src="js/notas_observaciones.js"></script>
+    <script type="text/javascript" src="js/consultasMedicas.js"></script>
 </body>
 
 </html>
