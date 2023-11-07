@@ -1,0 +1,29 @@
+.consulta {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.btnConsulta {
+    width: 350px;
+}
+
+.contenidoConsulta {
+    background-color: beige;
+    width: 90%;
+    height: 65%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.consultaBtn {
+    margin-top: 10%;
+    margin-left: 75%;
+}
+
+.cardConsultas {
+    background-color: white;
+    border: 1px solid black;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 8%;
+    border-radius: 20px;
+}

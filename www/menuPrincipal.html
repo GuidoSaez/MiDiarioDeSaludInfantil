@@ -1,41 +1,58 @@
 <!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
 <div class="page" data-name="menuPrincipal">
     <div class="navbar">
-        <div class="navbar-inner sliding">
-        <div class="left">
-            <a href="#" class="link back">
-            <i class="icon icon-back"></i>
-            <span class="ios-only">Back</span>
-            </a>
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="right">
+                <a href="#" class="link icon-only">
+                    <img src="img/icons8-usuario-32.png" alt="">
+                    <i class="icon another-icon"></i>
+                </a>
+            </div>
         </div>
-        <div class="title">About Framework7</div>
+    </div>
+    <div class="panel panel-left panel-cover panel-init" id="panel-nested" data-container-el="#panel-page">
+        <div class="page">
+            <div class="page-content">
+                <div class="block block-strong-ios block-outline-ios">
+                    <p>Proximamente</p>
+                    <p><a class="panel-close">Salir</a></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="page-content">
-        <div class="container">
-            <div class="item">
-                <p>Registro del niño</p>
-                <a href="/registroNiño/"><img src="img/lapiz.png"></a>
-            </div>
-            <div class="item">
-                <p>Control de salud</p>
-                <a href="/controlDeSalud/"><img src="img/controlSalud.jpeg"></a>
-            </div>
-            <div class="item">
-                <p>Notas y observaciones</p>
-                <a href="/notas_observaciones/"><img src="img/notas.jpeg"></a>
-            </div>
-            <div class="item">
-                <p>Registro de vacunas</p>
-                <a href="/controlVacunas/"><img src="img/vacunas.jpeg"></a>
-            </div>
-            <div class="item">
-                <p>Consultas Medicas</p>
-                <a href="/consultasMedicas/"><img src="img/consultasMedicas.png"></a>
-            </div>
-            <div class="item">
-                <p>Recordatorios</p>
-                <a href="/alertas/"><img src="img/alertas.jpeg"></a>
-            </div>
+        <div class="registro">
+            <a href="/registroNiño/"><img class="imgLogo" src="img/lapiz.png"></a>
+            <p class="nombreApartado">Registro</p>
         </div>
+        <div class="controlSalud">
+            <a href="/controlDeSalud/"><img class="imgLogo" src="img/controlSalud.jpeg"></a>
+            <p class="nombreApartado">Controles</p>
+        </div>
+
+        <div class="notas">
+            <a href="/notas_observaciones/"><img class="imgLogo" src="img/notas.jpeg"></a>
+            <p class="nombreApartado">Notas</p>
+        </div>
+        <div class="vacunas">
+            <a href="/controlVacunas/"><img class="imgLogo" src="img/vacunas.jpeg"></a>
+            <p class="nombreApartado">Vacunas</p>
+        </div>
+
+        <div class="consultas">
+            <a href="/consultasMedicas/"><img class="imgLogo" src="img/consultasMedicas.png"></a>
+            <p class="nombreApartado">Consultas</p>
+        </div>
+        <div class="alertas">
+            <a href="/alertas/"><img class="imgLogo" src="img/alertas.jpeg"></a>
+            <p class="nombreApartado">Recordatorios</p>
+        </div>
+    </div>
+    <div class="toolbar toolbar-bottom ">
+        <div class="toolbar-inner ">
+            <a class="link " href="/menuPrincipal/"><img  src="img/icons8-casa-32.png" alt=""></a>
+        </div>
+    </div>
+    <div class="page-content hide-toolbar-on-scroll">
     </div>

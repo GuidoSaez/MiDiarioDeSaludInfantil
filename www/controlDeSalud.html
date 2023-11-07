@@ -1,320 +1,310 @@
 <!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
 <div class="page" data-name="controlDeSalud">
     <div class="navbar">
-        <div class="navbar-inner sliding">
-        <div class="left">
-            <a href="#" class="link back">
-            <i class="icon icon-back"></i>
-            <span class="ios-only">Back</span>
-            </a>
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="title"></div>
+            <div class="left">
+                <a href="#" class="link icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="right">
+                <a href="#" class="link icon-only">
+                    <img src="img/icons8-usuario-32.png" alt="">
+                    <i class="icon another-icon"></i>
+                </a>
+            </div>
         </div>
-        <div class="title">About Framework7</div>
+    </div>
+    <div class="panel panel-left panel-cover panel-init" id="panel-nested" data-container-el="#panel-page">
+        <div class="page">
+            <div class="page-content">
+                <div class="block block-strong-ios block-outline-ios">
+                    <p>This is page-nested Panel.</p>
+                    <p><a class="panel-close">Close me</a></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="page-content">
-        <div class="block-title">Welcome to Framework7</div>
-        <div class="block block-strong">
-            <swiper-container pagination class="demo-swiper-multiple" space-between="50">
-                <swiper-slide>
-                    <h2>Primer control:</h2>
-                    <div class="list list-strong-ios list-dividers-ios inset-ios">
-                        <ul>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Fecha</div>
-                                    <div class="item-input-wrap">
-                                        <input id="fechaPRIMERCONTROL" type="date">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+            
+                <h2 class="tituloPrimerControl">Primer control:</h2>
+                <div class="list list-strong-ios list-dividers-ios inset-ios">
+                    <ul>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="fechaPRIMERCONTROL" type="date" placeholder="Fecha:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Dias de vida</div>
-                                    <div class="item-input-wrap">
-                                        <input id="diasDeVidaPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="diasDeVidaPRIMERCONTROL" type="number" placeholder="Dias de vida:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Peso</div>
-                                    <div class="item-input-wrap">
-                                        <input id="pesoPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="pesoPRIMERCONTROL" type="number" placeholder="Peso:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="pesoPercentilPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="pesoPercentilPRIMERCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Talla</div>
-                                    <div class="item-input-wrap">
-                                        <input id="tallaPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="tallaPRIMERCONTROL" type="number" placeholder="Talla:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="tallaPercentilPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="tallaPercentilPRIMERCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Perimetro Cefalico</div>
-                                    <div class="item-input-wrap">
-                                        <input id="perCefalicoPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="perCefalicoPRIMERCONTROL" type="number" placeholder="Perimetro Cefalico:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="perCefalicoPercentilPRIMERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="perCefalicoPercentilPRIMERCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>Segundo Control:</h2>
-                    <div class="list list-strong-ios list-dividers-ios inset-ios">
-                        <ul>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Fecha</div>
-                                    <div class="item-input-wrap">
-                                        <input id="fechaSEGUNDOCONTROL" type="date">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="tituloSegundoControl">Segundo Control:</h2>
+                <div class="list list-strong-ios list-dividers-ios inset-ios">
+                    <ul>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="fechaSEGUNDOCONTROL" type="date" placeholder="Fecha:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Dias de vida</div>
-                                    <div class="item-input-wrap">
-                                        <input id="diasDeVidaSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="diasDeVidaSEGUNDOCONTROL" type="number" placeholder="Dias de vida:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Peso</div>
-                                    <div class="item-input-wrap">
-                                        <input id="pesoSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="pesoSEGUNDOCONTROL" type="number" placeholder="Peso:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="pesoSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="pesoSEGUNDOCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Talla</div>
-                                    <div class="item-input-wrap">
-                                        <input id="tallaSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="tallaSEGUNDOCONTROL" type="number" placeholder="Talla:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="tallaPercentilSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="tallaPercentilSEGUNDOCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Perimetro Cefalico</div>
-                                    <div class="item-input-wrap">
-                                        <input id="perCefalicoSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="perCefalicoSEGUNDOCONTROL" type="number" placeholder="Perimetro Cefalico">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="perCefalicoPercentilSEGUNDOCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="perCefalicoPercentilSEGUNDOCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>Tercer Control:</h2>
-                    <div class="list list-strong-ios list-dividers-ios inset-ios">
-                        <ul>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Fecha</div>
-                                    <div class="item-input-wrap">
-                                        <input id="fechaTERCERCONTROL" type="date">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="tituloTercerControl">Tercer Control:</h2>
+                <div class="list list-strong-ios list-dividers-ios inset-ios">
+                    <ul>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="fechaTERCERCONTROL" type="date" placeholder="Fecha:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Dias de vida</div>
-                                    <div class="item-input-wrap">
-                                        <input id="diasDeVidaTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="diasDeVidaTERCERCONTROL" type="number" placeholder="Dias de vida:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Peso</div>
-                                    <div class="item-input-wrap">
-                                        <input id="pesoTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="pesoTERCERCONTROL" type="number" placeholder="Peso:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="pesoPercentilTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="pesoPercentilTERCERCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Talla</div>
-                                    <div class="item-input-wrap">
-                                        <input id="tallaTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="tallaTERCERCONTROL" type="number" placeholder="Talla:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="tallaPercentilTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="tallaPercentilTERCERCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                            <li class="item-content item-input">
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Perimetro Cefalico</div>
-                                    <div class="item-input-wrap">
-                                        <input id="perCefalicoTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input item-input-outline">
+                            <div class="item-inner">
+                                <div class="item-input-wrap">
+                                    <input id="perCefalicoTERCERCONTROL" type="number" placeholder="Perimetro Cefalico:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                                <div class="item-inner">
-                                    <div class="item-title item-label">Percentil</div>
-                                    <div class="item-input-wrap">
-                                        <input id="perCefalicoPercentilTERCERCONTROL" type="number">
-                                        <span class="input-clear-button"></span>
-                                    </div>
+                            </div>
+                            <div class="item-content item-input item-input-outline">
+                                <div class="item-input-wrap">
+                                    <input id="perCefalicoPercentilTERCERCONTROL" type="number" placeholder="Percentil:">
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </swiper-slide>
-                <swiper-slide>
-                    <h1>Pesquisa Neonatal</h1>
-                    <h2>Screening Metabolico:</h2>
-                    <div class="list list-strong-ios list-outline-ios list-dividers-ios">
-                        <ul>
-                            <li>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="fibrosisQuisticaPRIMERCONTROL" type="checkbox" name="demo-checkbox"/>
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Fibrosis Quistica</div>
-                                    </div>
-                                </label>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="defiBiotinidasaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Deficit de Biotinidasa</div>
-                                    </div>
-                                </label>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="fenilcetonuriaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Fenilcetonuria</div>
-                                    </div>
-                                </label>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="galactosemiaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Galactosemia</div>
-                                    </div>
-                                </label>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="hiperSupraCongePRIMERCONTROL" type="checkbox" name="demo-checkbox" />
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Hiperplasia suprarrenal congenita</div>
-                                    </div>
-                                </label>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="hipoCongePRIMERCONTROL" type="checkbox" name="demo-checkbox" />
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Hipotiroidismo Congenito</div>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>Screening Auditivo:</h2>
-                    <div class="list list-strong-ios list-outline-ios list-dividers-ios">
-                        <ul>
-                            <li>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="otoAcusticasPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Otoemisiones acusticas</div>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <h2>Screening Oftalmologico:</h2>
-                    <div class="list list-strong-ios list-outline-ios list-dividers-ios">
-                        <ul>
-                            <li>
-                                <label class="item-checkbox item-checkbox-icon-end item-content">
-                                    <input id="reflejoOjoRojoPRIMERCONTROL" type="checkbox" name="demo-checkbox"/>
-                                    <i class="icon icon-checkbox"></i>
-                                    <div class="item-inner">
-                                        <div class="item-title">Reflejo ojo rojo</div>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <h1 class="titulosControl">Pesquisa Neonatal</h1>
+                <h2 class="titulosControl">Screening Metabolico:</h2>
+                <div class="list list-strong-ios list-outline-ios list-dividers-ios">
+                    <ul>
+                        <li>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="fibrosisQuisticaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Fibrosis Quistica</div>
+                                </div>
+                            </label>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="defiBiotinidasaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Deficit de Biotinidasa</div>
+                                </div>
+                            </label>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="fenilcetonuriaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Fenilcetonuria</div>
+                                </div>
+                            </label>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="galactosemiaPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Galactosemia</div>
+                                </div>
+                            </label>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="hiperSupraCongePRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Hiperplasia suprarrenal congenita</div>
+                                </div>
+                            </label>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="hipoCongePRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Hipotiroidismo Congenito</div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="titulosControl">Screening Auditivo:</h2>
+                <div class="list list-strong-ios list-outline-ios list-dividers-ios">
+                    <ul>
+                        <li>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="otoAcusticasPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Otoemisiones acusticas</div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="titulosControl">Screening Oftalmologico:</h2>
+                <div class="list list-strong-ios list-outline-ios list-dividers-ios">
+                    <ul>
+                        <li>
+                            <label class="item-checkbox item-checkbox-icon-end item-content">
+                                <input id="reflejoOjoRojoPRIMERCONTROL" type="checkbox" name="demo-checkbox" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                    <div class="item-title">Reflejo ojo rojo</div>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="grid grid-cols-3 grid-gap">
-                        <button id="btnguardarControlSalud" class="button button-fill">Guardar</button>
-                    </div>
-                </swiper-slide>
-            </swiper-container>
+                <div class="grid grid-cols-3 grid-gap btnControlS">
+                    <button id="btnguardarControlSalud" class="button button-fill btn ">Guardar</button>
+                </div>
+
+        <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+                <a class="link" href="/menuPrincipal/"><img src="img/icons8-casa-32.png" alt=""></a>
+            </div>
         </div>
-    </div>
-</div>
+        <div class="page-content hide-toolbar-on-scroll">
+        </div>

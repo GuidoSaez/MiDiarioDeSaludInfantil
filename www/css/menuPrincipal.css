@@ -1,14 +1,61 @@
-.container {
-    display: flex;
-}
-
-.item {
+.registro {
+    position: absolute;
+    top: 17%;
+    left: 15%;
     width: 100px;
     height: 100px;
-    margin: 5px;
 }
 
-.item a img {
-    width: 100%;
-    height: 100%;
+.controlSalud {
+    position: absolute;
+    top: 17%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
 }
+
+.notas {
+    position: absolute;
+    top: 40%;
+    right: 18%;
+}
+
+.vacunas {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.consultas {
+    position: absolute;
+    right: 18%;
+    bottom: 15%;
+}
+
+.alertas {
+    position: absolute;
+    left: 16%;
+    bottom: 15%;
+}
+
+.nombreApartado {
+   font-size: 9px;
+}
+
+.toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #ccc;
+    border-top: 2px solid black;
+}
+
+.imgLogo {
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+};
+

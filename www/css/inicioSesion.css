@@ -1,0 +1,19 @@
+.email {
+    margin-top: 25%;
+}
+
+.btn {
+    width: 200px;
+    background-color: #00d5bf;
+    color: black;
+    font-weight: 400;
+    border: 1px solid black;
+}
+
+.btnInicio, .btnVolver {
+    margin-left: 25%;
+}
+
+.btnVolver {
+    margin-top: 5%;
+}

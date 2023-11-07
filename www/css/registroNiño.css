@@ -1,6 +1,7 @@
+
 .demo-swiper-multiple {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .checkbox {
@@ -8,3 +9,32 @@
     margin-right: 20px;
 }
 
+.c1 {
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.c2 {
+    margin-top: 5.5%;
+}
+
+.c3 {
+    margin-top: 5.5%;
+}
+
+.tituloReanimacion {
+    margin-left: 25%;
+}
+
+.cSI {
+    margin-left: 35%;
+}
+
+.cNO {
+    margin-left: 10%;
+}
+
+.btnRegistroNiño {
+    margin-top: 15%;
+    margin-left: 25%;
+}

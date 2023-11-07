@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -14,7 +15,8 @@
 -->
     <!-- Required meta tags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
@@ -35,57 +37,63 @@
     <link rel="stylesheet" href="css/registroNiño.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/notas_observaciones.css">
+    <link rel="stylesheet" href="css/inicioSesion.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/consultasMedicas.css">
+    <link rel="stylesheet" href="css/controlDeSalud.css">
+    <link rel="stylesheet" href="css/controlVacunas.css">
 </head>
 
 <body>
     <div id="app">
         <!-- Statusbar overlay -->
         <div class="statusbar"></div>
-    
+
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Top Navbar -->
-            <div class="navbar">
+            <!--<div class="navbar">
                 <div class="navbar-bg"></div>
                 <div class="navbar-inner">
                     <div class="left"><i class="icon icon-back"></i></div>
                     <div class="title"></div>
                     <div class="right"><i class="icon icon-forward"></i></div>
                 </div>
-            </div>
-    
-            <!-- Toolbar -->
+            </div> -->
+
+            <!-- Toolbar 
             <div class="toolbar toolbar-bottom">
                 <div class="toolbar-inner">
-                <!-- Toolbar links -->
+                 Toolbar links 
                 <a href="/menuPrincipal/" class="link">Volver</a>
                 </div>
-            </div>
-        
-        <!-- Initial Page, "data-name" contains page name -->
+            </div> -->
+
+            <!-- Initial Page, "data-name" contains page name -->
             <div data-name="index" class="page">
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <div class="block">
-                        
-                        <!-- CONTENIDO DEMO -->
-                        
-                        <img class="imgBebe" src="img/imgIndex.png" alt="">
-                           
-                        <h1>Mi diario de salud infantil</h1>
-                            
-                        <p>¿Eres nuevo? Regístrate acá</p>
+                    <!-- CONTENIDO DEMO -->
+
+                    <img class="imgBebe" src="img/imgIndex.png" alt="">
+
+                    <h1 class="tituloIndex">Mi diario de salud infantil</h1>
+
+                    <div class="registrarse">
+                        <span>¿Eres nuevo? Regístrate acá</span>
                         <div class="grid grid-cols-3 grid-gap">
-                            <a href="/registro/" class="button button-fill">Registrarse</a>
+                            <a href="/registro/" class="button button-fill btnRegistro" >Registrarse</a>
                         </div>
-                                
-                        <p>¿Ya tienes cuenta? Inicia sesión acá</p>
-                        <div class="grid grid-cols-3 grid-gap btnIniciarSesion">
-                            <a href="/inicioSesion/" class="button button-fill">Iniciar Sesión</a>
-                        </div>
-                                
-                        <!-- FIN DE DEMO -->        
                     </div>
+                    
+                    <div class="iniciarSesion">
+                        <span>¿Ya tienes cuenta? Inicia sesión acá</span>
+                        <div class="grid grid-cols-3 grid-gap ">
+                            <a href="/inicioSesion/" class="button button-fill btn2">Iniciar Sesión</a>
+                        </div>
+                    </div>
+                    
+                    <!-- FIN DE DEMO -->
                 </div>
             </div>
         </div>
@@ -106,9 +114,9 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
-    
-<!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
--->    
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
     <!--<script type="text/javascript" src="lib/framework7/framework7.js"></script>-->

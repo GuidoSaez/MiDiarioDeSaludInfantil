@@ -57,7 +57,34 @@ body {
 
 .imgBebe {
     width: 150px;
+    margin-top: 15%;
+    margin-left: 30%;
 }
+
+.tituloIndex {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.registrarse, .iniciarSesion  {
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+.registrarse span, .iniciarSesion span {
+    font-size: 9px;
+    padding-left: 20px;
+}
+
+.btnRegistro, .btn2 {
+    width: 200px;
+    background-color: #00d5bf;
+    color: black;
+    font-weight: 400;
+    border: 1px solid black;
+}
+
 
 
 

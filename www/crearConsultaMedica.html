@@ -1,22 +1,44 @@
 <!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
 <div class="page" data-name="crearConsultaMedica">
     <div class="navbar">
-        <div class="navbar-inner sliding">
-        <div class="left">
-            <a href="#" class="link back">
-            <i class="icon icon-back"></i>
-            <span class="ios-only">Back</span>
-            </a>
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="title"></div>
+            <div class="left">
+                <a href="#" class="link icon-only">
+                    <i class="icon icon-back"></i>
+                </a>
+            </div>
+            <div class="right">
+                <a href="#" class="link icon-only">
+                    <img src="img/icons8-usuario-32.png" alt="">
+                    <i class="icon another-icon"></i>
+                </a>
+            </div>
         </div>
-        <div class="title">About Framework7</div>
+    </div>
+    <div class="panel panel-left panel-cover panel-init" id="panel-nested" data-container-el="#panel-page">
+        <div class="page">
+            <div class="page-content">
+                <div class="block block-strong-ios block-outline-ios">
+                    <p>Proximamente.</p>
+                    <p><a class="panel-close">Close me</a></p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="page-content">
         
-        <textarea id="mensajeConsulta"></textarea>
+        <textarea id="mensajeConsulta" class="contenidoConsulta" placeholder="Escribe tu consulta aquí:"></textarea>
 
-        <div class="grid grid-cols-3 grid-gap">
-            <button id="btnGuardarConsulta" class="button button-fill">Guardar</button>
+        <div class="grid grid-cols-3 grid-gap ">
+            <button id="btnGuardarConsulta" class="button button-fill btn consultaBtn">Guardar</button>
         </div>
+        <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+              <a class="link" href="/menuPrincipal/"><img src="img/icons8-casa-32.png" alt=""></a>
+            </div>
+          </div>
+        <div class="page-content hide-toolbar-on-scroll">
     </div>
 </div>
